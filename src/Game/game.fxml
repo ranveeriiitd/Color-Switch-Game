@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fx:id="pane" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="6000.0" prefWidth="400.0" vbarPolicy="NEVER" vvalue="1" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.Game">
+    <AnchorPane minHeight="1000.0" minWidth="400.0" onMouseClicked="#jump" onScroll="#pause" prefHeight="6000.0" prefWidth="400.0" style="-fx-background-color: #272727;">
+
+        <Group fx:id="square1" layoutX="25.0" layoutY="1660.0">
+            <Line endX="100.0" layoutX="174.0" layoutY="-9.0" startX="-100.0" stroke="#32DBF0" strokeLineCap="ROUND" strokeWidth="10.0" />
+            <Line endX="100.0" layoutX="74.0" layoutY="91.0" rotate="90.0" startX="-100.0" stroke="#FF0181" strokeLineCap="ROUND" strokeWidth="10.0" />
+            <Line endX="100.0" layoutX="174.0" layoutY="191.0" startX="-100.0" stroke="#FAE100" strokeLineCap="ROUND" strokeWidth="10.0" />
+            <Line endX="100.0" layoutX="279.0" layoutY="91.0" rotate="90.0" startX="-100.0" stroke="#900DFF" strokeLineCap="ROUND" strokeWidth="10.0" />
+            <Line endX="103.0" layoutX="166.0" layoutY="-9.0" startX="77.0" stroke="#32DBF0" strokeWidth="10.0" />
+        </Group>
+        <Group fx:id="star1" layoutX="164.0" layoutY="1984.0">
+            <Polygon fill="#ff21ba" layoutX="33.0" layoutY="29.0" points="-11.0, 37.0, 16.0, 37.0, 2.5, 14.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Polygon fill="#ff21c3" layoutX="33.0" layoutY="36.0" points="-11.0, 37.0, 16.0, 37.0, 2.5, 14.5" rotate="180.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+        </Group>
+        <Group fx:id="plus1" layoutX="188.0" layoutY="2227.0">
+            <Line endX="50.0" layoutX="41.0" layoutY="44.0" startX="-50.0" stroke="#32DBF0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Line endX="50.0" layoutX="151.0" layoutY="44.0" startX="-50.0" stroke="#FAE100" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Line endX="50.0" layoutX="96.0" layoutY="-11.0" rotate="90.0" startX="-50.0" stroke="#FF0181" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Line endX="50.0" layoutX="96.0" layoutY="99.0" rotate="90.0" startX="-50.0" stroke="#900DFF" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+        </Group>
+        <Group fx:id="star2" layoutX="165.0" layoutY="2427.0">
+            <children>
+                <Polygon fill="#ff21ba" layoutX="33.0" layoutY="29.0" points="-11.0, 37.0, 16.0, 37.0, 2.5, 14.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                <Polygon fill="#ff21c3" layoutX="33.0" layoutY="36.0" points="-11.0, 37.0, 16.0, 37.0, 2.5, 14.5" rotate="180.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            </children>
+        </Group>
+        <Group fx:id="triangle" layoutX="103.0" layoutY="2652.0">
+            <Line endX="150.0" layoutX="74.0" layoutY="186.0" startX="-100.0" stroke="#FF0181" strokeLineCap="ROUND" strokeWidth="10.0" />
+            <Line endX="150.0" layoutX="137.0" layoutY="78.0" rotate="60.0" startX="-100.0" stroke="#FAE100" strokeLineCap="ROUND" strokeWidth="10.0" />
+            <Line endX="150.0" layoutX="11.0" layoutY="78.0" rotate="120.0" startX="-100.0" stroke="#900DFF" strokeLineCap="ROUND" strokeWidth="10.0" />
+            <Circle fill="#1f93ff00" layoutX="99.0" layoutY="113.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+        </Group>
+        <Group fx:id="color1" layoutX="190.0" layoutY="2942.0">
+            <Arc fill="#32DBF0" layoutX="13.0" layoutY="13.0" length="90.0" radiusX="15.0" radiusY="15.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+            <Arc fill="#FF0181" layoutX="13.0" layoutY="13.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="90.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+            <Arc fill="#FAE100" layoutX="13.0" layoutY="13.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="180.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+            <Arc fill="#900DFF" layoutX="13.0" layoutY="13.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="270.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+        </Group>
+        <Group fx:id="star3" layoutX="167.0" layoutY="2993.0">
+            <children>
+                <Polygon fill="#ff21ba" layoutX="33.0" layoutY="29.0" points="-11.0, 37.0, 16.0, 37.0, 2.5, 14.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                <Polygon fill="#ff21c3" layoutX="33.0" layoutY="36.0" points="-11.0, 37.0, 16.0, 37.0, 2.5, 14.5" rotate="180.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            </children>
+        </Group>
+
+        <Group fx:id="circle1" layoutX="53.0" layoutY="3152.0">
+            <Arc fill="#ffffff00" layoutX="169.0" layoutY="110.0" length="90" radiusX="90" radiusY="90" rotate="45.0" stroke="#32DBF0" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="10.0" />
+            <Arc fill="#ffffff00" layoutX="100.0" layoutY="43.0" length="90" radiusX="90" radiusY="90" rotate="315.0" stroke="#900DFF" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Arc fill="#ffffff00" layoutX="101.0" layoutY="178.0" length="90" radiusX="90" radiusY="90" rotate="135.0" stroke="#FF0181" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Arc fill="#ffffff00" layoutX="32.0" layoutY="111.0" length="90" radiusX="90" radiusY="90" rotate="225.0" stroke="#FAE100" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="10.0" />
+        </Group>
+        <Group fx:id="color2" layoutX="188.0" layoutY="3435.0">
+            <children>
+                <Arc fill="#32DBF0" layoutX="13.0" layoutY="13.0" length="90.0" radiusX="15.0" radiusY="15.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+                <Arc fill="#FF0181" layoutX="13.0" layoutY="13.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="90.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+                <Arc fill="#FAE100" layoutX="13.0" layoutY="13.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="180.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+                <Arc fill="#900DFF" layoutX="13.0" layoutY="13.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="270.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+            </children>
+        </Group>
+        <Group fx:id="nestedRing" layoutX="48.0" layoutY="3645.0" rotate="90.0">
+            <Group fx:id="h" layoutX="28.0" layoutY="25.0">
+                <children>
+                    <Arc fill="#ffffff00" layoutX="149.0" layoutY="104.0" length="90" radiusX="90" radiusY="90" rotate="45.0" stroke="#32DBF0" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="10.0" />
+                    <Arc fill="#ffffff00" layoutX="81.0" layoutY="37.0" length="90" radiusX="90" radiusY="90" rotate="315.0" stroke="#900DFF" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="10.0" />
+                    <Arc fill="#ffffff00" layoutX="82.0" layoutY="171.0" length="90" radiusX="90" radiusY="90" rotate="135.0" stroke="#FF0181" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="10.0" />
+                    <Arc fill="#ffffff00" layoutX="14.0" layoutY="105.0" length="90" radiusX="90" radiusY="90" rotate="225.0" stroke="#FAE100" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="10.0" />
+                </children>
+            </Group>
+            <Arc fill="#ffffff00" layoutX="81.0" layoutY="49.0" length="90" radiusX="145.0" radiusY="145.0" rotate="315.0" stroke="#900DFF" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Arc fill="#ffffff00" layoutX="188.0" layoutY="155.0" length="90" radiusX="145.0" radiusY="145.0" rotate="45.0" stroke="#32DBF0" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="10.0" />
+            <Arc fill="#ffffff00" layoutX="82.0" layoutY="261.0" length="90" radiusX="145.0" radiusY="145.0" rotate="135.0" stroke="#FF0181" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Arc fill="#ffffff00" layoutX="-25.0" layoutY="156.0" length="90.0" radiusX="145.0" radiusY="145.0" rotate="225.0" stroke="#FAE100" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="10.0" />
+        </Group>
+        <Group fx:id="color3" layoutX="193.0" layoutY="4001.0">
+            <children>
+                <Arc fill="#32DBF0" layoutX="13.0" layoutY="13.0" length="90.0" radiusX="15.0" radiusY="15.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+                <Arc fill="#FF0181" layoutX="13.0" layoutY="13.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="90.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+                <Arc fill="#FAE100" layoutX="13.0" layoutY="13.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="180.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+                <Arc fill="#900DFF" layoutX="13.0" layoutY="13.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="270.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+            </children>
+        </Group>
+        <Group fx:id="circle2" layoutX="58.0" layoutY="4161.0">
+            <children>
+                <Arc fill="#ffffff00" layoutX="169.0" layoutY="110.0" length="90" radiusX="90" radiusY="90" rotate="45.0" stroke="#32DBF0" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="10.0" />
+                <Arc fill="#ffffff00" layoutX="100.0" layoutY="43.0" length="90" radiusX="90" radiusY="90" rotate="315.0" stroke="#900DFF" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="10.0" />
+                <Arc fill="#ffffff00" layoutX="101.0" layoutY="178.0" length="90" radiusX="90" radiusY="90" rotate="135.0" stroke="#FF0181" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="10.0" />
+                <Arc fill="#ffffff00" layoutX="32.0" layoutY="111.0" length="90" radiusX="90" radiusY="90" rotate="225.0" stroke="#FAE100" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="10.0" />
+            </children>
+        </Group>
+        <Group fx:id="square2" layoutX="30.0" layoutY="4618.0">
+            <children>
+                <Line endX="100.0" layoutX="174.0" layoutY="-9.0" startX="-100.0" stroke="#32DBF0" strokeLineCap="ROUND" strokeWidth="10.0" />
+                <Line endX="100.0" layoutX="74.0" layoutY="91.0" rotate="90.0" startX="-100.0" stroke="#FF0181" strokeLineCap="ROUND" strokeWidth="10.0" />
+                <Line endX="100.0" layoutX="174.0" layoutY="191.0" startX="-100.0" stroke="#FAE100" strokeLineCap="ROUND" strokeWidth="10.0" />
+                <Line endX="100.0" layoutX="279.0" layoutY="91.0" rotate="90.0" startX="-100.0" stroke="#900DFF" strokeLineCap="ROUND" strokeWidth="10.0" />
+                <Line endX="103.0" layoutX="166.0" layoutY="-9.0" startX="77.0" stroke="#32DBF0" strokeWidth="10.0" />
+            </children>
+        </Group>
+        <Group fx:id="plus2" layoutX="20.0" layoutY="5069.0">
+            <children>
+                <Line endX="50.0" layoutX="41.0" layoutY="44.0" startX="-50.0" stroke="#32DBF0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+                <Line endX="50.0" layoutX="151.0" layoutY="44.0" startX="-50.0" stroke="#FAE100" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+                <Line endX="50.0" layoutX="96.0" layoutY="-11.0" rotate="90.0" startX="-50.0" stroke="#FF0181" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+                <Line endX="50.0" layoutX="96.0" layoutY="99.0" rotate="90.0" startX="-50.0" stroke="#900DFF" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            </children>
+        </Group>
+        <Group fx:id="star5" layoutX="165.0" layoutY="4832.0">
+            <children>
+                <Polygon fill="#ff21ba" layoutX="33.0" layoutY="29.0" points="-11.0, 37.0, 16.0, 37.0, 2.5, 14.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                <Polygon fill="#ff21c3" layoutX="33.0" layoutY="36.0" points="-11.0, 37.0, 16.0, 37.0, 2.5, 14.5" rotate="180.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            </children>
+        </Group>
+        <Group fx:id="star6" layoutX="165.0" layoutY="5289.0">
+            <children>
+                <Polygon fill="#ff21ba" layoutX="33.0" layoutY="29.0" points="-11.0, 37.0, 16.0, 37.0, 2.5, 14.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                <Polygon fill="#ff21c3" layoutX="33.0" layoutY="36.0" points="-11.0, 37.0, 16.0, 37.0, 2.5, 14.5" rotate="180.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            </children>
+        </Group>
+        <Group fx:id="circle3" layoutX="51.0" layoutY="5475.0">
+            <children>
+                <Arc fill="#ffffff00" layoutX="168.0" layoutY="110.0" length="90" radiusX="90" radiusY="90" rotate="45.0" stroke="#32DBF0" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="10.0" />
+                <Arc fill="#ffffff00" layoutX="100.0" layoutY="43.0" length="90" radiusX="90" radiusY="90" rotate="315.0" stroke="#900DFF" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="10.0" />
+                <Arc fill="#ffffff00" layoutX="100.0" layoutY="178.0" length="90" radiusX="90" radiusY="90" rotate="135.0" stroke="#FF0181" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="10.0" />
+                <Arc fill="#ffffff00" layoutX="32.0" layoutY="110.0" length="90" radiusX="90" radiusY="90" rotate="225.0" stroke="#FAE100" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="10.0" />
+            </children>
+        </Group>
+        <Circle fx:id="player" fill="#FF0181" layoutX="204.0" layoutY="5852.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+        <Group fx:id="star4" layoutX="170.0" layoutY="4404.0">
+            <children>
+                <Polygon fill="#ff21ba" layoutX="33.0" layoutY="29.0" points="-11.0, 37.0, 16.0, 37.0, 2.5, 14.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                <Polygon fill="#ff21c3" layoutX="33.0" layoutY="36.0" points="-11.0, 37.0, 16.0, 37.0, 2.5, 14.5" rotate="180.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            </children>
+        </Group>
+      <Label fx:id="score" accessibleRole="NODE" layoutX="314.0" layoutY="5833.0" prefHeight="39.0" prefWidth="43.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <SubScene fx:id="subScene" height="362.0" layoutX="3.0" layoutY="5504.0" visible="false" width="400.0">
+        <root>
+          <Region />
+        </root>
+      </SubScene>
+    </AnchorPane>
+</ScrollPane>

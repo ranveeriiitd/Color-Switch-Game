@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Group layoutX="-48.0" layoutY="37.0">
+            <Arc fill="#ffffff00" layoutX="169.0" layoutY="110.0" length="90" radiusX="90" radiusY="90" rotate="45.0"
+                 stroke="#0048ff" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="10.0"/>
+            <Arc fill="#ffffff00" layoutX="100.0" layoutY="43.0" length="90" radiusX="90" radiusY="90" rotate="315.0"
+                 stroke="#00dd00" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="10.0"/>
+            <Arc fill="#ffffff00" layoutX="101.0" layoutY="178.0" length="90" radiusX="90" radiusY="90" rotate="135.0"
+                 stroke="#d70000" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="10.0"/>
+            <Arc fill="#ffffff00" layoutX="32.0" layoutY="111.0" length="90" radiusX="90" radiusY="90" rotate="225.0"
+                 stroke="#dded30" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="10.0"/>
+        </Group>
+    </children>
+
+</AnchorPane>

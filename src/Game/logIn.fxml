@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #272727;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.LogIn">
+    <Label layoutX="131.0" layoutY="142.0" prefHeight="30.0" prefWidth="139.0" text="Enter game name" textFill="#fffefe">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <TextField fx:id="textField" layoutX="115.0" layoutY="185.0" />
+   <Label layoutX="99.0" layoutY="14.0" text="SignUp" textFill="WHITE">
+      <font>
+         <Font size="62.0" />
+      </font>
+   </Label>
+   <ImageView fx:id="image" fitHeight="202.0" fitWidth="256.0" layoutX="100.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../../Downloads/ColorSwitch.jpg" />
+      </image></ImageView>
+   <ImageView fx:id="playButton" fitHeight="62.0" fitWidth="132.0" layoutX="130.0" layoutY="246.0" onMouseClicked="#playButton" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../../Downloads/PlayButton.png" />
+      </image></ImageView>
+   <ImageView fx:id="cancelButton" fitHeight="62.0" fitWidth="68.0" layoutX="332.0" layoutY="6.0" onMouseClicked="#cancelButton" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../../Downloads/CrossButton.png" />
+      </image></ImageView>
+    <Group fx:id="p2" layoutX="200.0" layoutY="160.0">
+        <Line endX="40.0" layoutX="87.0" layoutY="39.0" stroke="#32DBF0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+        <Line endX="40.0" layoutX="137.0" layoutY="39.0" stroke="#FAE100" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+        <Line endX="40.0" layoutX="112.0" layoutY="14.0" rotate="90.0" stroke="#FF0181" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+        <Line endX="40.0" layoutX="112.0" layoutY="64.0" rotate="90.0" stroke="#900DFF" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+    </Group>
+   <Group fx:id="p1" layoutX="-76.0" layoutY="160.0">
+      <children>
+         <Line endX="40.0" layoutX="87.0" layoutY="39.0" stroke="#32DBF0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+         <Line endX="40.0" layoutX="137.0" layoutY="39.0" stroke="#FAE100" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+         <Line endX="40.0" layoutX="112.0" layoutY="14.0" rotate="90.0" stroke="#FF0181" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+         <Line endX="40.0" layoutX="112.0" layoutY="64.0" rotate="90.0" stroke="#900DFF" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+      </children>
+   </Group>
+</AnchorPane>

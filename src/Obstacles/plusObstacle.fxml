@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="279.0" prefWidth="297.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <Group layoutX="54.0" layoutY="95.0">
+        <Line endX="50.0" layoutX="41.0" layoutY="44.0" startX="-50.0" stroke="#0048ff" strokeLineCap="ROUND"
+              strokeLineJoin="ROUND" strokeWidth="10.0"/>
+        <Line endX="50.0" layoutX="151.0" layoutY="44.0" startX="-50.0" stroke="#dded30" strokeLineCap="ROUND"
+              strokeLineJoin="ROUND" strokeWidth="10.0"/>
+        <Line endX="50.0" layoutX="96.0" layoutY="-11.0" rotate="90.0" startX="-50.0" stroke="#d70000"
+              strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0"/>
+        <Line endX="50.0" layoutX="96.0" layoutY="99.0" rotate="90.0" startX="-50.0" stroke="#00dd00"
+              strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0"/>
+    </Group>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #272727;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.EndScreen">
+   <children>
+      <Label layoutX="133.0" layoutY="14.0" prefHeight="63.0" prefWidth="129.0" text="Game" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="score" layoutX="286.0" layoutY="225.0" prefHeight="35.0" prefWidth="54.0" text="0" textFill="#fffafa">
+         <font>
+            <Font size="45.0" />
+         </font></Label>
+      <Label layoutX="43.0" layoutY="223.0" prefHeight="57.0" prefWidth="237.0" text="Your Score:" textFill="WHITE">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label fx:id="contLabel" layoutX="275.0" layoutY="319.0" prefHeight="35.0" prefWidth="78.0" text="For  x stars?" textFill="WHITE" />
+      <Label layoutX="211.0" layoutY="81.0" text="ver" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Group fx:id="circle" layoutX="53.0" layoutY="9.0">
+         <children>
+            <Arc fill="#ffffff00" layoutX="124.0" layoutY="120.0" length="91.0" radiusX="30.0" radiusY="30.0" rotate="45.0" stroke="#32DBF0" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="10.0" />
+            <Arc fill="#ffffff00" layoutX="99.0" layoutY="95.0" length="91.0" radiusX="30.0" radiusY="30.0" rotate="315.0" stroke="#900DFF" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Arc fill="#ffffff00" layoutX="100.0" layoutY="145.0" length="91.0" radiusX="30.0" radiusY="30.0" rotate="135.0" stroke="#FF0181" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Arc fill="#ffffff00" layoutX="74.0" layoutY="120.0" length="91.0" radiusX="30.0" radiusY="30.0" rotate="225.0" stroke="#FAE100" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="10.0" />
+         </children>
+      </Group>
+      <ImageView fx:id="crossButton" fitHeight="65.0" fitWidth="68.0" layoutX="329.0" layoutY="7.0" onMouseClicked="#backButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/CrossButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playButton" fitHeight="62.0" fitWidth="132.0" layoutX="132.0" layoutY="383.0" onMouseClicked="#playAgain" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/PlayButton.png" />
+         </image></ImageView>
+      <ImageView fx:id="resumeButton" fitHeight="72.0" fitWidth="120.0" layoutX="140.0" layoutY="319.0" onMouseClicked="#cont" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/ResumeButton.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

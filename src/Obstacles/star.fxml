@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <Group layoutX="165.0" layoutY="92.0">
+        <Polygon fill="#ff21ba" layoutX="33.0" layoutY="29.0" points="-11.0, 37.0, 16.0, 37.0, 2.5, 14.5" stroke="BLACK"
+                 strokeType="INSIDE" strokeWidth="0.0"/>
+        <Polygon fill="#ff21c3" layoutX="33.0" layoutY="36.0" points="-11.0, 37.0, 16.0, 37.0, 2.5, 14.5" rotate="180.0"
+                 stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0"/>
+    </Group>
+</AnchorPane>

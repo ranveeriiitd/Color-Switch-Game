@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <Group layoutX="187.0" layoutY="137.0">
+        <Arc fill="#0048ff" layoutX="13.0" layoutY="13.0" length="90.0" radiusX="15.0" radiusY="15.0" stroke="WHITE"
+             strokeType="INSIDE" strokeWidth="0.0" type="ROUND"/>
+        <Arc fill="#d70000" layoutX="13.0" layoutY="13.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="90.0"
+             stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" type="ROUND"/>
+        <Arc fill="#dded30" layoutX="13.0" layoutY="13.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="180.0"
+             stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" type="ROUND"/>
+        <Arc fill="#00dd00" layoutX="13.0" layoutY="13.0" length="90.0" radiusX="15.0" radiusY="15.0" startAngle="270.0"
+             stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" type="ROUND"/>
+    </Group>
+</AnchorPane>
